@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(10,10,10);
+    background-color: rgb(37, 141, 238);
     color: rgb(240,240,240);
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: 'Lemon/Milk', Arial, Helvetica, sans-serif;    
 }
 
 header {
@@ -18,6 +18,52 @@ header {
     padding: 12px;
     margin-top: 15px;
 }
+
+/* /////////// CSS styling for the nav bar ///////// */
+.navbar {
+    /* Remove default list styling */
+    list-style-type: none;
+    
+    /* Center the navigation bar */
+    /* navbar stays at the top while scrolling */
+    /* position: fixed; */
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eeeeee; /* blue nav bar background */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 99999;
+}
+
+/* Style for each item in the navigation bar */
+.navbar li {
+    float: left; /* Align items horizontally */
+}
+
+/* Style for each link in the navigation bar */
+.navbar li .link {
+    font-family: Cambria, Arial, Lato;
+    font-size: 12px;
+    display: block;
+    color: rgb(241, 241, 241); /* Off white text color */
+    text-align: center;
+    padding: 14px 16px; /* Padding around text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar img {
+    height: 35px;
+    width: 35px;
+    /* padding: 3px; */
+    padding-top: 2px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+/* /////////// CSS styling for the copy link ///////// */
 
 .share-button {
     width: 40px;
@@ -32,6 +78,8 @@ header {
     color: rgb(0,0,0);
 }
 
+/* /////////// CSS styling for the link tree links ///////// */
+
 .container {
     width: 91%;
     max-width: 680px;
@@ -41,11 +89,6 @@ header {
     align-items: center;
 }
 
-h1 {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
 a {
     text-decoration: none;
     color: rgb(240,240,240);
@@ -53,11 +96,16 @@ a {
 
 .tile {
     width: 100%;
-    background-color: rgb(37,37,37);
+    background-color: goldenrod;
     margin: 7px;
     border-radius: 17px;
     display: flex;
     justify-content: space-between;
+}
+
+.tile p {
+    font-size: 16px;
+    /* font-family: Lemon Milk, Arial, Helvetica, sans-serif; */
 }
 
 .tile:hover {
@@ -65,19 +113,19 @@ a {
     transform: scale(1.02);
 }
 
-.tile-share-button {
+.tile-copy-button {
     margin: 8px;
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(52,52,52);
+    background-color: rgb(37, 141, 238);
 }
 
-.tile-share-button svg {
+.tile-copy-button svg {
     margin-left: 12px;
     margin-top: 10px;
+    /* color: whitesmoke; */
 }
-
 
 .image-container {
     height: 96px;

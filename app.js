@@ -1,8 +1,8 @@
-const shareButtons = document.querySelectorAll('.tile-share-button')
-console.log(shareButtons)
+const copyButtons = document.querySelectorAll('.tile-copy-button')
+console.log(copyButtons)
 
 async function copyText(e) {
-// prevent button going to the site
+// allow the copy button to copy link to clipboard instead of opening the link in a tab
     e.preventDefault()
     const link = this.getAttribute('link')
     console.log(link)
@@ -14,6 +14,6 @@ async function copyText(e) {
     }
 }
 
-shareButtons.forEach(shareButton =>
-    shareButton.addEventListener('click', copyText))
+copyButtons.forEach(copyButtons =>
+    copyButtons.addEventListener('click', copyText))
 
