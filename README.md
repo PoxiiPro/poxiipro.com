@@ -1,3 +1,4 @@
--Linktree inspired landing page  
--Using HTML and CSS to create a landing page that neatly lists a bunch of links for people to access  
--CSS has some dynamic sizing for a desktop and mobile view  
+- Linktree inspired landing page  
+- Using HTML and CSS to create a landing page that neatly lists a bunch of links for people to access  
+- CSS has some dynamic sizing for a desktop and mobile view  
+- A little java script to allow the copy and paste button to be clicked without the link bar itself being triggered  
