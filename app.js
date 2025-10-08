@@ -1,5 +1,12 @@
+// Load navbar component
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading navbar:', error));
+
 const copyButtons = document.querySelectorAll('.tile-copy-button')
-console.log(copyButtons)
 
 async function copyText(e) {
 // allow the copy button to copy link to clipboard instead of opening the link in a tab

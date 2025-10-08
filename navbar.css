@@ -1,0 +1,45 @@
+/* Navbar Styles */
+
+/* Main navbar container */
+.navbar {
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eeeeee;
+    width: 100vw;
+    height: 6vh;
+    z-index: 99999;
+}
+
+/* Navbar unordered list */
+.navbar ul {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+/* Navbar links */
+.navbar li .link {
+    font-family: Cambria, Arial, Lato;
+    font-size: 16px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Navbar image (logo) */
+.navbar img {
+    height: 35px;
+    width: 35px;
+    padding-top: 3px;
+    border-radius: 48px;
+    overflow: hidden;
+}
